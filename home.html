@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<link rel= "stylesheet" type= "text/css" href= '{{ url_for("static", filename="style.css") }}'>
+
+
+</head>
+
+<body background="/static/images/iris-flowers.jpg">
+
+<body style="text-align: center">
+
+	<h1>Iris Prediction </h1>
+	<form class="forms" method="POST" action="/predict">
+
+		<label for="SepalLength" class="formGroup">Sepal Length:</label>
+		<input name="SepalLength" type="text" placeholder="Enter the Sepal Length">
+
+		<label for="SepalWidth" class="formGroup">Sepal Width</label>
+		<input name="SepalWidth" type="text" placeholder="Enter the Sepal Width">
+
+		<label for="PetalLength" class="formGroup">Petal Length</label>
+		<input name="PetalLength" type="text" placeholder="Enter the Petal Length">
+
+		<label for="PetalWidth" class="formGroup">Petal Width</label>
+		<input name="PetalWidth" type="text" placeholder="Enter the Petal Width">
+
+		<br>
+		<hr>
+		<input type="submit" name="submit" id="submit" value="Submit">
+	</form>
+	</div>
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Setosa</h4>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>Iris setosa, is a species in the genus Iris, it is also in the subgenus Limniris and in the series Tripetalae. It is a rhizomatous perennial from a wide range across the Arctic sea, including Alaska, Maine, Canada, Russia, northeastern Asia, China, Korea and southwards to Japan.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Virginica</h4>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                <li>Iris virginica, with the common name Virginia iris, is a perennial species of flowering plant, native to eastern North America. It is common along the coastal plain from Florida to Georgia in the Southeastern United States.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Versicolor</h4>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                <li>Iris versicolor is also commonly known as the blue flag, harlequin blueflag, larger blue flag, northern blue flag, and poison flag, plus other variations of these names, and in Britain and Ireland as purple iris. It is a species of Iris native to North America, in the Eastern United States and Eastern Canada.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
